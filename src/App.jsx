@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero';
-import About from './components/About/about';
+import About from './components/About/About'; // ✅ correct casing
 import Project from './components/Project/Project';
 import Education from './components/Education/Education';
 import Contact from './components/Contact/Contact'
