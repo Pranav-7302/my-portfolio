@@ -1,0 +1,99 @@
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 60px;
+  gap: 50px;
+  justify-content: space-between;
+  background-color: #001F2D;
+  color: #fff;
+}
+
+.about-left {
+  flex: 1 1 500px;
+}
+
+.about-title {
+  font-size: 32px;
+  color: #F77F00;
+  margin-bottom: 20px;
+}
+
+.about-left p {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.highlight {
+  color: #F77F00;
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.about-right {
+    
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill-card {
+  font-size: 20px;
+  background: #fff;
+  color: #212121;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #F77F00;
+}
+
+/* 📱 Responsive Styling for About Section */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .about-left {
+    flex: 1 1 100%;
+  }
+
+  .about-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .about-left p {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .about-right {
+    align-items: center;
+  }
+
+  .skill-card {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .card-icon {
+    font-size: 36px;
+  }
+}

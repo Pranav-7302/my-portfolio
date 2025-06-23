@@ -1,0 +1,90 @@
+/* Base styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 4px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.center-nav a {
+  margin: 0px 20px 0px 20px;
+  text-decoration: none;
+  color: #003049;
+  font-weight: 500;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.center-nav a:hover {
+  color: #F77F00;
+}
+.right-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 24px;
+  color: #003049;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #F77F00;
+}
+
+.icon.whatsapp:hover {
+  color: #25D366;
+}
+
+.icon.linkedin:hover {
+  color: #0077B5;
+}
+
+.icon.github:hover {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .left-nav{
+   height: 150px;
+  }
+
+  .center-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 20px;
+    a{
+      text-align: center;
+    }
+  }
+
+  .center-nav a {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .right-nav {
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+}
+
+    
